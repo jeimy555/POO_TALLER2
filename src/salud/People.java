@@ -2,14 +2,77 @@ package salud;
 
 import java.util.Scanner;
 
-import javax.print.DocFlavor.READER;
-
 public class People {
-    public String nombre,tipDoc, apellido,sexo;
-    public int peso,estatura;
-    public int pesoActual,documento,edad;
-    Scanner leer=new Scanner(System.in);
+  Scanner leer=new Scanner(System.in);
+    private String nombre,tipDoc, apellido,sexo;
+    private int peso,estatura;
+    private int pesoActual,documento,edad;
     
+    
+    
+    public Scanner getLeer() {
+      return leer;
+    }
+
+    public void setLeer(Scanner leer) {
+    this.leer = leer;
+    }
+    public String getNombre() {
+       
+      return nombre;
+    }
+    public void setNombre(String nombre) {
+    this.nombre = nombre;
+    }
+    public String getTipDoc() 
+    {
+        return tipDoc;
+    }
+    public void setTipDoc(String tipDoc) {
+    this.tipDoc = tipDoc;
+    }
+    public String getApellido() {
+       return apellido;
+    }
+    public void setApellido(String apellido) {
+       this.apellido = apellido;
+    }
+    public String getSexo() {
+     return sexo;
+    }
+    public void setSexo(String sexo) {
+      this.sexo = sexo;
+    }
+    public int getPeso() {
+      return peso;
+    }
+    public void setPeso(int peso) {
+      this.peso = peso;
+    }
+    public int getEstatura() {
+      return estatura;
+    }
+    public void setEstatura(int estatura) {
+      this.estatura = estatura;
+    }
+    public int getPesoActual() {
+      return pesoActual;
+    }
+    public void setPesoActual(int pesoActual) {
+      this.pesoActual = pesoActual;
+    }
+    public int getDocumento() {
+      return documento;
+    }
+    public void setDocumento(int documento) {
+      this.documento = documento;
+    }
+    public int getEdad() {
+      return edad;
+    }
+    public void setEdad(int edad) {
+      this.edad = edad;
+    }
     public void pedirDatos() {
         System.out.println("ingrese su tipo de documento");
         tipDoc=leer.nextLine();
